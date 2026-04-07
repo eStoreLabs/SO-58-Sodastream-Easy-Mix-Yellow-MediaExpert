@@ -1,0 +1,1583 @@
+<style>
+			@font-face {
+				font-family: "HurmeGeometricSans3";
+				src: local("HurmeGeometricSans3"), url("./fonts/HurmeGeometricSans3-Bold.woff") format("woff");
+				font-weight: 700;
+			}
+			@font-face {
+				font-family: "HurmeGeometricSans3";
+				src: local("HurmeGeometricSans3"), url("./fonts/HurmeGeometricSans3-Regular.woff") format("woff");
+				font-weight: 400;
+			}
+			@font-face {
+				font-family: "HurmeGeometricSans3";
+				src: local("HurmeGeometricSans3"), url("./fonts/HurmeGeometricSans3-Black.woff") format("woff");
+				font-weight: 900;
+			}
+			@font-face {
+				font-family: "HurmeGeometricSans3";
+				src: local("HurmeGeometricSans3"), url("./fonts/HurmeGeometricSans3-Light.woff2") format("woff2");
+				font-weight: 300;
+			}
+			#es-rc #es-rc-content {
+				font-family: "HurmeGeometricSans3", sans-serif;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 1.2;
+				color: #012349;
+				background-color: #faf8f8;
+				max-width: 990px;
+				margin: auto;
+				container: es-rc-content/inline-size;
+				overflow: hidden;
+				font-variant-ligatures: none;
+			}
+			#es-rc #es-rc-content ::-moz-selection {
+				background-color: #012349;
+				color: #faf8f8;
+			}
+			#es-rc #es-rc-content ::selection {
+				background-color: #012349;
+				color: #faf8f8;
+			}
+			#es-rc #es-rc-content * {
+				box-sizing: border-box;
+			}
+			#es-rc #es-rc-content p {
+				margin: 0;
+			}
+			#es-rc #es-rc-content img {
+				width: 100%;
+				display: block;
+				margin: 0 auto;
+			}
+			#es-rc #es-rc-content button {
+				display: block;
+			}
+			#es-rc #es-rc-content .es-section {
+				padding: 32px;
+			}
+			#es-rc #es-rc-content .es-tm {
+				display: inline-block;
+				font-size: 15px;
+				vertical-align: top;
+				margin-top: 5px;
+			}
+			#es-rc #es-rc-content .es-tm-headline {
+				display: inline-block;
+				font-size: 18px;
+				vertical-align: top;
+				margin-top: 5px;
+			}
+			@container es-rc-content (min-width: 800px) {
+				#es-rc #es-rc-content .es-tm-headline {
+					font-size: 32px;
+				}
+			}
+			#es-rc #es-rc-content .es-section-title {
+				font-weight: 700;
+				font-size: 32px;
+				text-align: center;
+				margin-block: 16px;
+				text-transform: uppercase;
+			}
+			@container es-rc-content (min-width: 660px) {
+				#es-rc #es-rc-content .es-section-title {
+					font-size: 48px;
+				}
+			}
+			#es-rc #es-rc-content .es-desktop {
+				position: relative;
+			}
+			@container es-rc-content (min-width: 660px) {
+				#es-rc #es-rc-content .es-desktop {
+					display: block;
+				}
+			}
+			#es-rc #es-rc-content .es-pre-kv {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				background-color: #012349;
+				padding: 0;
+				gap: 30px;
+			}
+			#es-rc #es-rc-content .es-pre-kv__video {
+				width: 100%;
+				display: block;
+				margin: 0 auto;
+			}
+			#es-rc #es-rc-content .es-pre-kv__right {
+				padding-bottom: 30px;
+			}
+			#es-rc #es-rc-content .es-pre-kv__title {
+				text-align: center;
+				font-weight: 700;
+				color: #ffffff;
+			}
+			#es-rc #es-rc-content .es-kv {
+				display: flex;
+				flex-direction: column;
+				gap: 24px;
+				background-color: #faf8f8;
+				padding: 0;
+				overflow: hidden;
+				position: relative;
+			}
+			#es-rc #es-rc-content .es-kv__top {
+				padding: 32px;
+			}
+			#es-rc #es-rc-content .es-kv__logo {
+				max-width: 300px;
+				margin-bottom: 10px;
+			}
+			#es-rc #es-rc-content .es-kv__title {
+				text-align: center;
+			}
+			#es-rc #es-rc-content .es-kv__title--headline {
+				margin-bottom: 10px;
+				margin-top: 25px;
+				font-weight: 700;
+				font-size: 30px;
+			}
+			#es-rc #es-rc-content .es-kv__title--headline span {
+				display: block;
+				color: #f6c641;
+			}
+			#es-rc #es-rc-content .es-kv__title--bottomline {
+				margin-bottom: 25px;
+				font-weight: 700;
+				font-size: 16px;
+			}
+			#es-rc #es-rc-content .es-kv__title-circle {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				padding: 15px;
+				margin: 0 auto;
+				color: #012349;
+				background: #feea94;
+				font-size: 16px;
+				font-weight: 700;
+				border-radius: 50%;
+				width: 180px;
+				height: 180px;
+				text-align: center;
+			}
+			#es-rc #es-rc-content .es-kv__title-circle span {
+				font-size: 35px;
+				font-weight: 700;
+			}
+			#es-rc #es-rc-content .es-kv__title-circle--desktop {
+				display: none;
+			}
+			#es-rc #es-rc-content .es-kv__description-title {
+				margin-bottom: 15px;
+				font-weight: 700;
+				text-align: center;
+				font-size: 25px;
+			}
+			#es-rc #es-rc-content .es-kv__packshot {
+				position: relative;
+			}
+			#es-rc #es-rc-content .es-kv__packshot__img {
+				max-width: 400px;
+			}
+			#es-rc #es-rc-content .es-kv__packshot__img--desktop {
+				display: none;
+			}
+			#es-rc #es-rc-content .es-kv__description {
+				margin-block-start: 30px;
+				margin-block-end: 30px;
+			}
+			#es-rc #es-rc-content .es-kv__description__text {
+				display: block;
+				max-width: 85%;
+				margin: 0 auto;
+				font-size: 16px;
+				text-align: center;
+			}
+			@container es-rc-content (min-width: 440px) {
+				#es-rc #es-rc-content .es-kv__title--bottomline {
+					font-size: 18px;
+				}
+			}
+			@container es-rc-content (min-width: 550px) {
+				#es-rc #es-rc-content .es-kv__title--headline {
+					font-size: 45px;
+				}
+				#es-rc #es-rc-content .es-kv__title--bottomline {
+					font-size: 18px;
+				}
+				#es-rc #es-rc-content .es-kv__description__text {
+					font-size: 18px;
+					text-align: center;
+				}
+			}
+			@container es-rc-content (min-width: 660px) {
+				#es-rc #es-rc-content .es-kv {
+					justify-content: space-between;
+					padding: 40px 0px;
+					padding-bottom: 0;
+					overflow: hidden;
+				}
+			}
+			@container es-rc-content (min-width: 768px) {
+				#es-rc #es-rc-content .es-kv__top {
+					padding-bottom: 70px;
+				}
+				#es-rc #es-rc-content .es-kv__packshot {
+					position: relative;
+				}
+				#es-rc #es-rc-content .es-kv__packshot__img {
+					max-height: 600px;
+				}
+			}
+			@container es-rc-content (min-width: 880px) {
+				#es-rc #es-rc-content .es-kv__logo {
+					max-width: 250px;
+					margin-bottom: 16px;
+				}
+				#es-rc #es-rc-content .es-kv__title--headline {
+					margin-bottom: 10px;
+				}
+				#es-rc #es-rc-content .es-kv__title--bottomline {
+					font-size: 18px;
+				}
+				#es-rc #es-rc-content .es-kv__packshot {
+					margin-right: 0;
+				}
+				#es-rc #es-rc-content .es-kv__packshot__img {
+					max-height: 650px;
+				}
+				#es-rc #es-rc-content .es-kv__description__text {
+					max-width: 93%;
+					font-size: 20px;
+					text-align: center;
+				}
+			}
+			#es-rc #es-rc-content .es-design {
+				padding: 30px 15px;
+				padding-bottom: 0;
+				background: #faf8f8;
+				position: relative;
+				z-index: 0;
+			}
+			#es-rc #es-rc-content .es-design__title {
+				margin-bottom: 15px;
+				font-size: 25px;
+				font-weight: 700;
+				text-align: center;
+			}
+			#es-rc #es-rc-content .es-design__subtitle {
+				display: block;
+				margin: 0 auto;
+				margin-bottom: 25px;
+				text-align: center;
+				font-size: 16px;
+			}
+			#es-rc #es-rc-content .es-design__container {
+				margin-top: -1px;
+				background: #faf8f8;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 30px;
+			}
+			#es-rc #es-rc-content .es-design__container--desktop {
+				display: none;
+			}
+			#es-rc #es-rc-content .es-design__single {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-start;
+				gap: 10px;
+				max-width: 300px;
+			}
+			#es-rc #es-rc-content .es-design__single-img {
+				max-width: 125px;
+				width: auto;
+			}
+			#es-rc #es-rc-content .es-design__single-subtitle {
+				font-weight: 700;
+				text-align: center;
+				font-size: 16px;
+			}
+			#es-rc #es-rc-content .es-design__description-img {
+				margin-bottom: 25px;
+			}
+			#es-rc #es-rc-content .es-design__description-img--desktop {
+				display: none;
+			}
+			#es-rc #es-rc-content .es-design__new {
+				padding-top: 50px;
+			}
+			#es-rc #es-rc-content .es-design__new-title {
+				margin-bottom: 20px;
+				font-size: 20px;
+				font-weight: 700;
+				text-align: center;
+			}
+			#es-rc #es-rc-content .es-design__new-description {
+				margin-bottom: 25px;
+				font-size: 16px;
+				text-align: center;
+			}
+			#es-rc #es-rc-content .es-slider .swiper-button-prev:after,
+			#es-rc #es-rc-content .es-slider .swiper-rtl .swiper-button-next:after,
+			#es-rc #es-rc-content .es-slider .swiper-button-next:after,
+			#es-rc #es-rc-content .es-slider .swiper-rtl .swiper-button-next:after {
+				content: "";
+			}
+			#es-rc #es-rc-content .es-slider .swiper-button-next,
+			#es-rc #es-rc-content .es-slider .swiper-button-prev {
+				width: unset;
+				height: unset;
+				position: static;
+				justify-content: unset;
+				display: unset;
+			}
+			#es-rc #es-rc-content .es-slider {
+				margin-block: 32px;
+				margin-bottom: 0;
+				margin-top: 0;
+				/* wrapper ze slajdami */
+			}
+			#es-rc #es-rc-content .es-slider .es-swiper {
+				position: relative;
+				width: 100%;
+			}
+			#es-rc #es-rc-content .es-slider .es-swiper-wrapper {
+				display: flex;
+				transition: transform 0.5s ease;
+			}
+			#es-rc #es-rc-content .es-slider {
+				/* slajdy */
+			}
+			#es-rc #es-rc-content .es-slider__slide {
+				flex: 0 0 100%;
+				box-sizing: border-box;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				gap: 24px;
+				padding: 32px;
+			}
+			#es-rc #es-rc-content .es-slider__slide--1 {
+				color: #012349;
+				z-index: 0;
+			}
+			@container es-rc-content (min-width: 660px) {
+				#es-rc #es-rc-content .es-slider__slide {
+					gap: 35px;
+					font-size: 24px;
+				}
+			}
+			#es-rc #es-rc-content .es-steps {
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				gap: 32px;
+				background: linear-gradient(180deg, #faf8f8 35%, #012349 35%);
+			}
+			#es-rc #es-rc-content .es-steps__title {
+				font-weight: 700;
+				font-size: 25px;
+				text-align: center;
+				color: #012349;
+				background-color: #faf8f8;
+			}
+			#es-rc #es-rc-content .es-steps__steps__item__text {
+				font-weight: 600;
+				font-size: 16px;
+				text-align: center;
+			}
+			#es-rc #es-rc-content .es-steps__steps__container ::-moz-selection {
+				color: #012349;
+			}
+			#es-rc #es-rc-content .es-steps__steps__container ::selection {
+				color: #012349;
+			}
+			#es-rc #es-rc-content .es-steps__steps__title {
+				font-weight: 900;
+				font-size: 32px;
+			}
+			#es-rc #es-rc-content .es-steps__steps__wrapper {
+				display: flex;
+				flex-direction: column;
+				gap: 24px;
+				align-items: center;
+			}
+			#es-rc #es-rc-content .es-steps__steps__item {
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+				max-width: 200px;
+			}
+			#es-rc #es-rc-content .es-steps__steps__item__image {
+				margin-bottom: 30px;
+				max-width: 225px;
+			}
+			@container es-rc-content (min-width: 660px) {
+				#es-rc #es-rc-content .es-steps {
+					background: linear-gradient(180deg, #faf8f8 50%, #012349 50%);
+				}
+				#es-rc #es-rc-content .es-steps__steps__title {
+					font-size: 34px;
+				}
+				#es-rc #es-rc-content .es-steps__steps__wrapper {
+					margin-bottom: 30px;
+					flex-direction: row;
+					align-items: start;
+					justify-content: space-evenly;
+					-moz-column-gap: 40px;
+					column-gap: 40px;
+				}
+				#es-rc #es-rc-content .es-steps__steps__item {
+					max-width: 150px;
+				}
+			}
+			#es-rc #es-rc-content .es-easy-mix {
+				padding: 0px 15px;
+			}
+			#es-rc #es-rc-content .es-easy-mix__title {
+				margin-bottom: 30px;
+				font-size: 20px;
+				font-weight: 700;
+				text-align: center;
+			}
+			#es-rc #es-rc-content .es-easy-mix__img {
+				margin-bottom: 15px;
+			}
+			#es-rc #es-rc-content .es-easy-mix__description {
+				font-size: 16px;
+				text-align: left;
+			}
+			#es-rc #es-rc-content .es-comfort {
+				padding: 30px 15px;
+			}
+			#es-rc #es-rc-content .es-comfort__left {
+				margin-bottom: 25px;
+			}
+			#es-rc #es-rc-content .es-comfort__left-title {
+				margin-bottom: 35px;
+				font-size: 20px;
+				font-weight: 700;
+				text-align: center;
+			}
+			#es-rc #es-rc-content .es-comfort__left-description {
+				font-size: 16px;
+			}
+			#es-rc #es-rc-content .es-style__img {
+				max-width: 60%;
+				margin-left: 10px;
+			}
+			#es-rc #es-rc-content .es-style__left {
+				max-width: 310px;
+				margin: 0 auto;
+			}
+			#es-rc #es-rc-content .es-style__inner {
+				max-width: 350px;
+				margin: 0 auto;
+				position: relative;
+				margin-bottom: 20px;
+			}
+			#es-rc #es-rc-content .es-style__wrapper {
+				position: absolute;
+				top: -20px;
+				right: -106px;
+			}
+			#es-rc #es-rc-content .es-style__img-title-group {
+				position: relative;
+			}
+			#es-rc #es-rc-content .es-style__title-img {
+				margin-bottom: 25px;
+				max-width: 30%;
+			}
+			#es-rc #es-rc-content .es-style__img-title {
+				position: absolute;
+				top: 55%;
+				left: 52%;
+				transform: translate(-44%, -43%);
+				color: #002349;
+				font-size: 14px;
+				font-weight: 700;
+				text-align: center;
+				z-index: 1;
+			}
+			#es-rc #es-rc-content .es-style__img-description {
+				max-width: 85%;
+				margin: 0 auto;
+				margin-bottom: 25px;
+				font-size: 16px;
+				text-align: center;
+			}
+			#es-rc #es-rc-content .es-style__img-description span {
+				display: block;
+				font-weight: 700;
+				font-size: 25px;
+			}
+			#es-rc #es-rc-content .es-eco {
+				padding: 30px 15px;
+			}
+			#es-rc #es-rc-content .es-eco__bottom-title {
+				margin-bottom: 20px;
+				font-size: 20px;
+				font-weight: 700;
+				text-align: center;
+			}
+			#es-rc #es-rc-content .es-eco__subtitle {
+				font-size: 16px;
+				text-align: center;
+			}
+			#es-rc #es-rc-content .es-cross__container {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+			#es-rc #es-rc-content .es-cross__single {
+				padding: 20px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				gap: 20px;
+			}
+			#es-rc #es-rc-content .es-cross__single--1 {
+				color: #ffffff;
+				background-color: #002349;
+			}
+			#es-rc #es-rc-content .es-cross__single--2 {
+				background-color: #F6C641;
+			}
+			#es-rc #es-rc-content .es-cross__single--3 {
+				color: #ffffff;
+				background-color: #E25D5F;
+			}
+			#es-rc #es-rc-content .es-cross__single-title {
+				font-weight: 700;
+				font-size: 16px;
+				text-align: center;
+			}
+			#es-rc #es-rc-content .es-cross__single-title--blue {
+				color: #002349;
+			}
+			#es-rc #es-rc-content .es-cross__single-description {
+				font-weight: 400;
+				font-size: 16px;
+				text-align: center;
+				line-height: 1.5;
+			}
+			#es-rc #es-rc-content .es-cross__single-description--blue {
+				color: #002349;
+			}
+			#es-rc #es-rc-content .es-cross__img {
+				max-width: 50%;
+				margin-bottom: 30px;
+				width: auto;
+			}
+			#es-rc #es-rc-content .es-footer {
+				position: relative;
+				overflow: hidden;
+				padding: 30px 15px;
+				background-position: center;
+				min-height: 400px;
+			}
+			#es-rc #es-rc-content .es-footer__hashtag {
+				margin-bottom: 30px;
+			}
+			#es-rc #es-rc-content .es-footer .es-section-title {
+				margin-bottom: 20px;
+				text-transform: none;
+			}
+			#es-rc #es-rc-content .es-footer__hashtag {
+				padding-top: 20px;
+				margin-top: 0;
+				font-size: 20px;
+				color: #ffffff;
+				position: relative;
+				z-index: 3;
+			}
+			#es-rc #es-rc-content .es-footer__hashtag--last {
+				text-transform: none;
+			}
+			#es-rc #es-rc-content .es-footer__subtitle {
+				font-size: 16px;
+				color: #ffffff;
+				font-weight: 400;
+				position: relative;
+				z-index: 3;
+			}
+			#es-rc #es-rc-content .es-footer__inner {
+				margin-top: -50px;
+			}
+			#es-rc #es-rc-content .es-footer__inner::before {
+				content: "";
+				position: absolute;
+				width: 140%;
+				height: 400px;
+				background-color: #002349;
+				border-radius: 50%;
+				bottom: -30%;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			#es-rc #es-rc-content .es-footer__logo-wrapper {
+				background-color: #002349;
+				padding-bottom: 10px;
+			}
+			@media screen and (min-width: 550px) {
+				#es-rc #es-rc-content .es-style__img {
+					max-width: 80%;
+				}
+				#es-rc #es-rc-content .es-style__wrapper {
+					right: -155px;
+				}
+			}
+			@media screen and (min-width: 600px) {
+				#es-rc #es-rc-content .es-footer__inner::before {
+					bottom: -25%;
+				}
+			}
+			@media screen and (min-width: 676px) {
+				#es-rc #es-rc-content .es-footer__inner::before {
+					bottom: -25%;
+				}
+			}
+			@media screen and (min-width: 768px) {
+				#es-rc #es-rc-content .es-kv {
+					padding-bottom: 100px;
+				}
+				#es-rc #es-rc-content .es-kv__top {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					justify-content: space-between;
+					width: 100%;
+					padding-left: 40px;
+					padding-top: 0;
+					padding-bottom: 70px;
+				}
+				#es-rc #es-rc-content .es-kv__logo {
+					margin: 0;
+					max-width: 215px;
+					margin-bottom: 10px;
+				}
+				#es-rc #es-rc-content .es-kv__title {
+					text-align: left;
+					margin-top: 20px;
+				}
+				#es-rc #es-rc-content .es-kv .es-desktop {
+					width: 100%;
+				}
+				#es-rc #es-rc-content .es-kv__description {
+					margin-block: 30px;
+					margin-block-start: 24px;
+					width: 100%;
+				}
+				#es-rc #es-rc-content .es-kv__description__text {
+					text-align: center;
+				}
+				#es-rc #es-rc-content .es-kv__packshot {
+					align-items: end;
+					position: relative;
+					margin: 0 auto;
+					margin-right: 0;
+				}
+				#es-rc #es-rc-content .es-kv__packshot__img {
+					margin: 0;
+					max-height: 520px;
+					position: relative;
+					z-index: 1;
+				}
+				#es-rc #es-rc-content .es-kv__title-circle--mobile {
+					display: none;
+				}
+				#es-rc #es-rc-content .es-kv__packshot {
+					position: absolute;
+					top: -160px;
+					right: -30.5%;
+				}
+				#es-rc #es-rc-content .es-kv__title-circle--desktop {
+					display: block;
+					position: absolute;
+					padding-top: 30px;
+					bottom: -9%;
+					left: -11%;
+					z-index: 3;
+					width: 160px;
+					height: 160px;
+					font-size: 15px;
+				}
+				#es-rc #es-rc-content .es-kv__packshot__img {
+					max-width: revert;
+					max-height: 550px;
+				}
+				#es-rc #es-rc-content .es-kv__packshot__img--mobile {
+					display: none;
+				}
+				#es-rc #es-rc-content .es-kv__packshot__img--desktop {
+					display: block;
+				}
+				#es-rc #es-rc-content .es-pre-kv {
+					flex-direction: row;
+				}
+				#es-rc #es-rc-content .es-pre-kv__left {
+					width: 50%;
+				}
+				#es-rc #es-rc-content .es-pre-kv__title {
+					font-size: 30px;
+					padding-top: 25px;
+					padding-left: 35px;
+					text-align: left;
+				}
+				#es-rc #es-rc-content .es-kv {
+					padding-bottom: 150px;
+				}
+				#es-rc #es-rc-content .es-kv__packshot {
+					position: absolute;
+					top: -190px;
+					right: -30.5%;
+				}
+				#es-rc #es-rc-content .es-kv__title-circle {
+					position: absolute;
+					bottom: -2.4%;
+					right: 82.3%;
+					z-index: 3;
+				}
+				#es-rc #es-rc-content .es-kv__packshot__img {
+					max-width: revert;
+					max-height: 675px;
+				}
+				#es-rc #es-rc-content .es-kv__packshot__img--mobile {
+					display: none;
+				}
+				#es-rc #es-rc-content .es-kv__packshot__img--desktop {
+					display: block;
+				}
+				#es-rc #es-rc-content .es-design {
+					background-color: #faf8f8;
+					padding-right: 0;
+					padding-left: 0;
+				}
+				#es-rc #es-rc-content .es-design__inner {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					-moz-column-gap: 10px;
+							column-gap: 10px;
+					position: relative;
+					max-width: 750px;
+					margin: 0 auto;
+				}
+				#es-rc #es-rc-content .es-design__title, #es-rc #es-rc-content .es-design__subtitle {
+					padding-right: 15px;
+					padding-left: 15px;
+				}
+				#es-rc #es-rc-content .es-design__subtitle {
+					max-width: 92%;
+				}
+				#es-rc #es-rc-content .es-design__container {
+					display: none;
+				}
+				#es-rc #es-rc-content .es-design__description-img--mobile {
+					display: none;
+				}
+				#es-rc #es-rc-content .es-design__description-img--desktop {
+					display: block;
+				}
+				#es-rc #es-rc-content .es-design__single-subtitle {
+					font-size: 14px;
+					text-align: right;
+					position: absolute;
+				}
+				#es-rc #es-rc-content .es-design__single-subtitle--1 {
+					top: 16%;
+					left: 10%;
+				}
+				#es-rc #es-rc-content .es-design__single-subtitle--2 {
+					top: 26%;
+					right: 3%;
+					text-align: left;
+				}
+				#es-rc #es-rc-content .es-design__single-subtitle--3 {
+					top: 46%;
+					left: 9%;
+				}
+				#es-rc #es-rc-content .es-design__single-subtitle--4 {
+					top: 64%;
+					right: -1%;
+					text-align: left;
+				}
+				#es-rc #es-rc-content .es-design__single-subtitle--5 {
+					top: 76%;
+					left: 12%;
+				}
+				#es-rc #es-rc-content .es-design__description-img {
+					order: 2;
+					width: 470px;
+				}
+				#es-rc #es-rc-content .es-design__single {
+					flex-direction: row;
+				}
+				#es-rc #es-rc-content .es-design__single-img {
+					order: 2;
+				}
+				#es-rc #es-rc-content .es-design__container {
+					margin-top: 20px;
+					flex-direction: column;
+					justify-content: space-around;
+				}
+				#es-rc #es-rc-content .es-design__container--desktop {
+					display: flex;
+					margin-top: -40px;
+					row-gap: 60px;
+				}
+				#es-rc #es-rc-content .es-design__single {
+					max-width: 230px;
+				}
+				#es-rc #es-rc-content .es-design__new {
+					position: relative;
+				}
+				#es-rc #es-rc-content .es-design__new-wrapper {
+					position: absolute;
+					top: 40%;
+					left: 5%;
+					transform: translate(-5%, 0%);
+					width: 38%;
+				}
+				#es-rc #es-rc-content .es-design__new-title {
+					text-align: left;
+				}
+				#es-rc #es-rc-content .es-design__new-description {
+					text-align: left;
+				}
+				#es-rc #es-rc-content .es-style__left {
+					display: flex;
+					flex-flow: row;
+					max-width: 750px;
+					margin-left: 0;
+				}
+				#es-rc #es-rc-content .es-style__inner {
+					max-width: 67%;
+					margin-left: -125px;
+				}
+				#es-rc #es-rc-content .es-style__img {
+					max-width: 516px;
+					z-index: 3;
+					position: relative;
+				}
+				#es-rc #es-rc-content .es-style__img-description {
+					max-width: 300px;
+					margin-left: -25px;
+					margin-bottom: 75px;
+					align-self: flex-end;
+					text-align: left;
+				}
+				#es-rc #es-rc-content .es-style__title-img {
+					max-width: 60%;
+				}
+				#es-rc #es-rc-content .es-style__wrapper {
+					top: 10%;
+					right: -51.5%;
+				}
+				#es-rc #es-rc-content .es-style__img-title-group {
+					margin-right: revert;
+					margin-top: -25px;
+				}
+				#es-rc #es-rc-content .es-style__img-title {
+					font-size: 28px;
+				}
+				#es-rc #es-rc-content .es-eco {
+					padding-top: 0;
+					padding-left: 20px;
+					padding-right: 20px;
+					padding-bottom: 15px;
+				}
+				#es-rc #es-rc-content .es-eco__bottom-title {
+					font-weight: 700;
+					font-size: 20px;
+					text-align: center;
+				}
+				#es-rc #es-rc-content .es-slider {
+					position: relative;
+					z-index: 0;
+				}
+				#es-rc #es-rc-content .es-slider__slide--1 {
+					position: relative;
+				}
+				#es-rc #es-rc-content .es-cross__container {
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					align-items: unset;
+					gap: 0;
+				}
+				#es-rc #es-rc-content .es-cross__single-title {
+					min-height: 45px;
+				}
+				#es-rc #es-rc-content .es-cross__single-description {
+					min-height: 175px;
+				}
+				#es-rc #es-rc-content .es-cross__single {
+					max-width: 33.3%;
+					padding-top: 40px;
+					padding-bottom: 35px;
+					row-gap: 5px;
+				}
+				#es-rc #es-rc-content .es-steps__steps__item__text {
+					font-size: 16px;
+				}
+				#es-rc #es-rc-content .es-steps__steps__item {
+					max-width: 200px;
+				}
+				#es-rc #es-rc-content .es-footer {
+					background-image: url("../img/bottles-d.png");
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-color: #faf8f8;
+					min-height: 575px;
+					margin-top: 50px;
+				}
+				#es-rc #es-rc-content .es-footer__inner {
+					margin-top: 315px;
+					max-width: 85%;
+					margin-left: auto;
+					margin-right: auto;
+				}
+				#es-rc #es-rc-content .es-footer__inner::before {
+					display: none;
+				}
+				#es-rc #es-rc-content .es-footer__bottles {
+					display: none;
+				}
+			}
+			@media screen and (min-width: 800px) {
+				#es-rc #es-rc-content .es-kv {
+					padding-bottom: 100px;
+				}
+				#es-rc #es-rc-content .es-kv__title--headline {
+					margin-bottom: 50px;
+					font-size: 50px;
+				}
+				#es-rc #es-rc-content .es-kv__title--bottomline {
+					font-size: 20px;
+				}
+				#es-rc #es-rc-content .es-kv__packshot {
+					right: -23.5%;
+				}
+				#es-rc #es-rc-content .es-kv__title-circle {
+					bottom: -3%;
+					right: revert;
+					left: -8%;
+					right: auto;
+				}
+				#es-rc #es-rc-content .es-design__container--desktop {
+					row-gap: 88px;
+				}
+			}
+			@media screen and (min-width: 998px) {
+				#es-rc #es-rc-content .es-kv {
+					position: relative;
+					padding-bottom: 100px;
+				}
+				#es-rc #es-rc-content .es-kv__title--headline {
+					margin-bottom: 50px;
+					font-size: 60px;
+				}
+				#es-rc #es-rc-content .es-kv__title--bottomline {
+					font-size: 25px;
+				}
+				#es-rc #es-rc-content .es-kv__logo {
+					max-width: 290px;
+				}
+				#es-rc #es-rc-content .es-kv__title-circle {
+					bottom: -1%;
+					left: -7%;
+					right: auto;
+					z-index: 5;
+				}
+				#es-rc #es-rc-content .es-kv__packshot {
+					position: absolute;
+					top: -160px;
+					right: -14.5%;
+				}
+				#es-rc #es-rc-content .es-kv__packshot__img {
+					max-height: 730px;
+				}
+				#es-rc #es-rc-content .es-kv__packshot__img--mobile {
+					display: none;
+				}
+				#es-rc #es-rc-content .es-kv__packshot__img--desktop {
+					display: block;
+				}
+				#es-rc #es-rc-content .es-kv__title {
+					text-align: left;
+					margin-top: 10px;
+					max-width: 400px;
+				}
+				#es-rc #es-rc-content .es-cross__single-description {
+					min-height: 165px;
+				}
+				#es-rc #es-rc-content .es-cross__single-title {
+					min-height: 35px;
+				}
+				#es-rc #es-rc-content .es-design__description-img {
+					width: 595px;
+				}
+				#es-rc #es-rc-content .es-design__container--desktop {
+					row-gap: 100px;
+				}
+				#es-rc #es-rc-content .es-design__single-subtitle {
+					font-size: 19px;
+					font-weight: 700;
+				}
+				#es-rc #es-rc-content .es-design__single-subtitle--1 {
+					max-width: 230px;
+					left: -3.3%;
+					top: 15.6%;
+				}
+				#es-rc #es-rc-content .es-design__single-subtitle--2 {
+					max-width: 230px;
+					right: -9.6%;
+				}
+				#es-rc #es-rc-content .es-design__single-subtitle--3 {
+					max-width: 255px;
+					top: 45.9%;
+					left: -0.7%;
+				}
+				#es-rc #es-rc-content .es-design__single-subtitle--4 {
+					top: 64.1%;
+					right: -14.8%;
+					max-width: 255px;
+				}
+				#es-rc #es-rc-content .es-design__single-subtitle--5 {
+					top: 76.9%;
+					left: 1.2%;
+				}
+				#es-rc #es-rc-content .es-kv__description-title,
+				#es-rc #es-rc-content .es-design__title,
+				#es-rc #es-rc-content .es-steps__title,
+				#es-rc #es-rc-content .es-eco__bottom-title,
+				#es-rc #es-rc-content .es-footer__hashtag {
+					font-size: 28px;
+				}
+				#es-rc #es-rc-content .es-eco__subtitle {
+					margin-bottom: 30px;
+				}
+				#es-rc #es-rc-content .es-steps__steps__item {
+					max-width: 285px;
+				}
+				#es-rc #es-rc-content .es-easy-mix__title {
+					font-size: 29px;
+				}
+				#es-rc #es-rc-content .es-easy-mix__container {
+					display: flex;
+					-moz-column-gap: 50px;
+							column-gap: 50px;
+				}
+				#es-rc #es-rc-content .es-easy-mix__description {
+					text-align: left;
+				}
+				#es-rc #es-rc-content .es-easy-mix__left {
+					width: 50%;
+				}
+				#es-rc #es-rc-content .es-easy-mix__right {
+					width: 46%;
+				}
+				#es-rc #es-rc-content .es-comfort {
+					padding-bottom: 0;
+				}
+				#es-rc #es-rc-content .es-comfort__left-title {
+					font-size: 29px;
+				}
+				#es-rc #es-rc-content .es-comfort__container {
+					display: flex;
+					-moz-column-gap: 50px;
+							column-gap: 50px;
+					align-items: center;
+				}
+				#es-rc #es-rc-content .es-comfort__left {
+					padding-left: 25px;
+					width: 46%;
+				}
+				#es-rc #es-rc-content .es-comfort__right {
+					width: 54%;
+				}
+				#es-rc #es-rc-content .es-footer {
+					min-height: 500px;
+					background-position: top;
+					margin-top: 50px;
+					padding-bottom: 0;
+				}
+				#es-rc #es-rc-content .es-footer__inner {
+					max-width: 100%;
+					margin-top: 305px;
+					max-width: 100%;
+				}
+				#es-rc #es-rc-content .es-footer__hashtag {
+					padding-top: 0;
+					font-size: 32px;
+				}
+				#es-rc #es-rc-content .es-footer__subtitle {
+					max-width: 81%;
+					margin: 0 auto;
+				}
+				#es-rc #es-rc-content .es-style__inner {
+					max-width: 67%;
+				}
+				#es-rc #es-rc-content .es-style__left {
+					max-width: revert;
+				}
+				#es-rc #es-rc-content .es-style__img {
+					z-index: 3;
+					position: relative;
+					min-width: 100%;
+					max-width: 100%;
+				}
+				#es-rc #es-rc-content .es-style__img-title {
+					font-size: 35px;
+				}
+				#es-rc #es-rc-content .es-style__title-img {
+					max-width: 70%;
+				}
+				#es-rc #es-rc-content .es-style__img-description span {
+					font-size: 30px;
+				}
+				#es-rc #es-rc-content .es-style__wrapper {
+					right: -39.3%;
+				}
+				#es-rc #es-rc-content .es-style__img-title-group {
+					margin-right: revert;
+				}
+				#es-rc #es-rc-content .es-style__img-description {
+					margin-bottom: 165px;
+					margin-left: 0px;
+					font-size: 20px;
+					max-width: 405px;
+				}
+				#es-rc #es-rc-content .es-design__new-wrapper {
+					top: 35.4%;
+					left: 6%;
+					width: 34%;
+				}
+				#es-rc #es-rc-content .es-design__new-title {
+					margin-bottom: 55px;
+					font-size: 38px;
+				}
+				#es-rc #es-rc-content .es-design__new-description {
+					max-width: 355px;
+					font-size: 20px;
+				}
+				#es-rc #es-rc-content .es-steps__steps__item__text {
+					font-size: 18px;
+				}
+				#es-rc #es-rc-content .es-steps__steps__wrapper {
+					-moz-column-gap: 0;
+							column-gap: 0;
+				}
+			}
+			@media screen and (min-width: 1400px) {
+				#es-rc #es-rc-content #es-rc #es-rc-content .es-pre-kv__title {
+					font-size: 35px;
+				}
+			}
+</style>
+
+<div id="es-rc">
+	<div id="es-rc-content">
+		<div class="es-pre-kv">
+			<div class="es-pre-kv__left">
+				<video class="es-pre-kv__video"
+							 autoplay=""
+							 loop=""
+							 muted="">
+					<source src="./img/video.mp4"
+									type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+			<div class="es-pre-kv__right">
+				<p class="es-pre-kv__title">Idealnie schłodzone bąbelki gdziekolwiek&nbsp;jesteś!</p>
+			</div>
+		</div>
+		<div class="es-kv es-section">
+			<div class="es-kv__top">
+				<div>
+					<img class="es-kv__logo"
+							 src="./img/logo.png"
+							 alt="logo Sodastream">
+					<div class="es-kv__title">
+						<p class="es-kv__title--headline">
+							<span>fizz & go<sup class="es-tm-headline">™</sup></span>
+							easy mix
+						</p>
+						<p class="es-kv__title--bottomline">butelka termiczna<br>
+							do gazowania wody,
+							<br>
+							żółta, 0,9 l
+						</p>
+						<p class="es-kv__title-circle es-kv__title-circle--mobile">idelanie schłodzone napoje nawet do
+							<br><span>12h</span>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="es-kv__packshot">
+				<p class="es-kv__title-circle es-kv__title-circle--desktop">idelanie schłodzone napoje nawet do
+					<br><span>12h</span>
+				</p>
+				<img class="es-kv__packshot__img es-kv__packshot__img--desktop"
+						 src="./img/kv_pack-d.png"
+						 alt="Butelka SodaStream Easy Mix">
+				<img class="es-kv__packshot__img es-kv__packshot__img--mobile"
+						 src="./img/kv_pack-d.png"
+						 alt="Butelka SodaStream Easy Mix">
+			</div>
+
+		</div>
+
+		<div class="es-style">
+			<div class="es-desktop">
+				<div class="es-kv__description">
+					<p class="es-kv__description-title">złap ulubione bąbelki do termicznej butelki
+						i&nbsp;zabierz&nbsp;je&nbsp;ze&nbsp;sobą!</p>
+					<p class="es-kv__description__text">
+						Sięgnij po Sodastream fizz & go™ – rewolucyjną butelkę do gazowania wody, w której bąbelki pozostaną
+						idealnie chłodne
+						nawet do 12 godzin. To wielofunkcyjne rozwiązanie 3 w 1, które łączy w sobie funkcjonalność butelki do
+						saturatora,
+						bidonu na wodę oraz kubka termicznego, a przy tym zachwyca stylowym designem w pastelowym kolorze. Ciesz
+						się praktycznym
+						rozwiązaniem, które nadąża za Twoim tempem i wspiera Cię przez cały dzień!
+					</p>
+				</div>
+				<div class="es-style__left">
+					<div class="es-style__inner">
+						<img src="./img/delicate.png"
+								 alt="Twój kolor: żółty"
+								 class="es-style__img">
+						<div class="es-style__wrapper">
+							<div class="es-style__img-title-group">
+								<p class="es-style__img-title">
+									Twój kolor: <br>żółty
+								</p>
+								<img src="./img/subtelna.png"
+										 alt=""
+										 class="es-style__title-img">
+							</div>
+						</div>
+					</div>
+					<p class="es-style__img-description">
+						To odcień, w którym dobra energia spotyka się z wyrazistym stylem i odwagą do wyrażania siebie. To kolor
+						idealny dla
+						optymistów i dla tych, którzy chcą wprowadzić trochę słońca do swojej codzienności, nawet w pochmurny
+						dzień.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="es-design">
+			<p class="es-design__title">funkcjonalny design, który współgra razem z Tobą
+			</p>
+			<p class="es-design__subtitle">Poznaj butelkę do zadań specjalnych! Sodastream fizz & go jest odporna na
+				uszkodzenia i korozję, a przy tym niezwykle
+				szczelna — nie musisz się więc obawiać, że Twój napój straci bąbelki. Dodatkowo można ją bezpiecznie myć w
+				zmywarce, co
+				zapewnia maksymalną wygodę użytkowania. Czeka Cię cały dzień poza domem? Butelka zadba o to, by Twój napój
+				pozostał
+				przyjemnie chłodny nawet przez 12 godzin!
+			</p>
+
+			<div class="es-design__inner">
+				<img src="./img/design.png"
+						 alt="Szczelny korek"
+						 class="es-design__description-img es-design__description-img--mobile">
+				<img src="./img/design-d.png"
+						 alt="Szczelny korek"
+						 class="es-design__description-img es-design__description-img--desktop">
+				<div class="es-design__container es-design__container--desktop">
+					<div class="es-design__single">
+						<p class="es-design__single-subtitle es-design__single-subtitle--1">Idealnie schłodzone <br> napoje do
+							12
+							godzin
+						</p>
+					</div>
+					<div class="es-design__single">
+						<p class="es-design__single-subtitle es-design__single-subtitle--2">Szczelny korek<br> i hermetyczna<br>
+							konstrukcja
+						</p>
+					</div>
+					<div class="es-design__single">
+						<p class="es-design__single-subtitle es-design__single-subtitle--3">Materiał<br>
+							bez BPA
+						</p>
+					</div>
+					<div class="es-design__single">
+						<p class="es-design__single-subtitle es-design__single-subtitle--4">Dostosowana do <br>mycia w zmywarce
+						</p>
+					</div>
+					<div class="es-design__single">
+						<p class="es-design__single-subtitle es-design__single-subtitle--5">Wytrzymała stal<br>nierdzewna 18/8
+						</p>
+					</div>
+				</div>
+				<div class="es-design__container">
+					<div class="es-design__single">
+						<img src="./img/icon-1.png"
+								 alt="Idealnie schłodzone napoje"
+								 class="es-design__single-img">
+						<p class="es-design__single-subtitle">Idealnie schłodzone napoje do 12 godzin
+						</p>
+					</div>
+					<div class="es-design__single">
+						<img src="./img/icon-2.png"
+								 alt="Szczelny korek"
+								 class="es-design__single-img">
+						<p class="es-design__single-subtitle">Szczelny korek i hermetyczna konstrukcja
+						</p>
+					</div>
+					<div class="es-design__single">
+						<img src="./img/icon-3.png"
+								 alt="Materiał bez BPA"
+								 class="es-design__single-img">
+						<p class="es-design__single-subtitle">Materiał
+							bez BPA
+						</p>
+					</div>
+					<div class="es-design__single">
+						<img src="./img/icon-4.png"
+								 alt="Dostosowana do mycia"
+								 class="es-design__single-img">
+						<p class="es-design__single-subtitle">Dostosowana do mycia w zmywarce
+						</p>
+					</div>
+					<div class="es-design__single">
+						<img src="./img/icon-5.png"
+								 alt="Wytrzymała stal"
+								 class="es-design__single-img">
+						<p class="es-design__single-subtitle">Wytrzymała stal nierdzewna 18/8
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="es-design__new">
+				<div class="es-design__new-wrapper">
+					<p class="es-design__new-title">
+						świadomy wybór<br> na co dzień
+					</p>
+					<p class="es-design__new-description">
+						Pozytywna zmiana może zacząć się właśnie od Ciebie. Czasem wystarczy jeden świadomy wybór, by zrobić
+						realną różnicę.
+						Zamiast sięgać po jednorazowe butelki i kubki, wybierz rozwiązanie, które zostaje z Tobą na dłużej.
+						<br><br>
+						Z Sodastream fizz & go zadbasz o codzienne nawodnienie, jednocześnie wspierając dobro naszej planety. To
+						mały krok,
+						który prowadzi do wielkiej zmiany i bardziej świadomego stylu życia.
+					</p>
+				</div>
+				<img src="./img/clear.png"
+						 alt="Nowy design"
+						 class="es-design__new-img">
+			</div>
+
+		</div>
+
+		<div class="es-slider">
+			<div class="swiper es-swiper">
+				<div class="swiper-wrapper es-swiper-wrapper">
+					<div class="swiper-slide es-slider__slide es-slider__slide--1">
+						<p class="es-steps__title">gazuj, miksuj, smakuj</p>
+						<div class="es-steps__steps__container">
+
+							<div class="es-steps__steps__wrapper">
+								<div class="es-steps__steps__item">
+									<img class="es-steps__steps__item__image"
+											 src="./img/gaz.png"
+											 alt="gazuj">
+									<p class="es-steps__steps__item__text">
+										Wlej wodę z kranu do butelki do Sodastream fizz & go™, a następnie zamontuj ją w saturatorze.
+									</p>
+								</div>
+								<div class="es-steps__steps__item">
+									<img class="es-steps__steps__item__image"
+											 src="./img/mix.png"
+											 alt="miksuj">
+									<p class="es-steps__steps__item__text">Aby uzyskać pożądany poziom&nbsp;bąbelków, kilka razy
+										naciśnij
+										przycisk gazowania.</p>
+								</div>
+								<div class="es-steps__steps__item">
+									<img class="es-steps__steps__item__image"
+											 src="./img/go.png"
+											 alt="smakuj">
+									<p class="es-steps__steps__item__text">
+										Jeśli chcesz, dodaj ulubiony syrop Sodastream® lub inne dodatki. Lekko wstrząśnij
+										i&nbsp;ciesz&nbsp;się
+										smakiem!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="es-easy-mix">
+			<p class="es-easy-mix__title">
+				Sodastream fizz & go<sup class="es-tm">™</sup> – dowiedz się więcej o butelce do zadań&nbsp;specjalnych
+			</p>
+			<div class="es-easy-mix__container">
+				<div class="es-easy-mix__left">
+					<img src="./img/easy-mix.png"
+							 alt="Termiczna butelka Sodastream Fizz & Go™ Easy Mix"
+							 class="es-easy-mix__img">
+				</div>
+				<div class="es-easy-mix__right">
+					<p class="es-easy-mix__description">
+						<b>Z jakimi saturatorami można używać butelki Sodastream&nbsp;fizz & go™?</b><br>
+						Saturatory Terra, Art, Mix, Duo i Ensō to modele, które są&nbsp;w&nbsp;pełni kompatybilne z wielorazową
+						butelką
+						Sodastream&nbsp;fizz &
+						go.
+
+						<br><br>
+						<b>Czy butelkę Sodastream fizz & go™ można myć w zmywarce?</b><br>
+						Tak! Możesz bezpiecznie włożyć ją do zmywarki, by już&nbsp;po&nbsp;chwili cieszyć się idealną
+						czystością.
+
+						<br><br>
+						<b>Czy do butelki Sodastream fizz & go™ można wlać ciepły&nbsp;napój?</b><br>
+						Sodastream fizz&go to praktyczny bidon termiczny, w&nbsp;którym&nbsp;możesz przechowywać zarówno zimne
+						jak
+						i&nbsp;ciepłe&nbsp;napoje, takie
+						jak kawa czy herbata*.
+						<br><br>
+						*UWAGA! Nie nasycaj gazem wody o temperaturze powyżej&nbsp;45°C. Zachowaj szczególną ostrożność
+						podczas&nbsp;przechowywania
+						gorących płynów w&nbsp;butelce&nbsp;i&nbsp;otwierania butelki zawierającej gorące płyny.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="es-comfort">
+			<p class="es-comfort__left-title">Sodastream fizz & go<sup class="es-tm">™</sup> – pozytywny akcent każdego
+				dnia</p>
+			<div class="es-comfort__container">
+				<div class="es-comfort__left">
+
+					<p class="es-comfort__left-description">
+						<b>Aktywnie każdego dnia</b><br>Wybierasz się na wypad w góry, jogę, szybki spacer po&nbsp;pracy?
+						Sodastream
+						fizz & go™ sprawdzi się jako bidon&nbsp;lub&nbsp;termos,
+						który utrzymuje chłód napojów nawet&nbsp;do&nbsp;12&nbsp;godzin.&nbsp;To niezbędny kompan każdej
+						aktywności!
+						<br><br>
+						<b>Wygoda, która ułatwia każdy dzień</b><br>Masz intensywne plany? Bez obaw. Szczelna
+						konstrukcja&nbsp;butelki pozwala włożyć ją do torby lub plecaka&nbsp;i&nbsp;ruszać dalej bez
+						stresu. A po całym dniu łatwo&nbsp;i&nbsp;sprawnie&nbsp;umyjesz ją w zmywarce.
+						<br><br>
+						<b>Prezent, który zachwyca</b><br>Szukasz praktycznego upominku z charakterem?
+						Żółta&nbsp;butelka&nbsp;Sodastream
+						fizz & go ucieszy każdą obdarowaną osobę – łączy
+						wysoką funkcjonalność z designem, który przyciąga spojrzenia.
+						<br><br>
+						<b>W drodze po dobre chwile</b><br> Jesteś w drodze do pracy, wyruszasz na weekendową wycieczkę lub
+						robisz szybkie zakupy? Butelka Sodastream&nbsp;fizz&nbsp;& go
+						mieści się w uchwycie samochodowym,&nbsp;dzięki&nbsp;czemu Twój ulubiony, napój
+						będziesz&nbsp;mieć&nbsp;zawsze pod
+						ręką – i
+						to w idealnej
+						temperaturze!
+					</p>
+				</div>
+				<div class="es-comfort__right">
+					<img src="./img/comfort.png"
+							 alt="Wygodna butelka Sodastream na co dzień"
+							 class="es-comfort__img">
+				</div>
+			</div>
+		</div>
+
+		<div class="es-eco">
+			<p class="es-eco__bottom-title">
+				rozpocznij bąbelkową przygodę z syropami Sodastream®
+			</p>
+		</div>
+
+		<div class="es-cross">
+			<div class="es-cross__container">
+				<div class="es-cross__single es-cross__single--1">
+					<img src="./img/cross-1.png"
+							 alt="smaki, do których zawsze chce się wracać"
+							 class="es-cross__img">
+					<p class="es-cross__single-title">smaki, do których zawsze chce się wracać<br></p>
+					<p class="es-cross__single-description">
+						Sodastream® Pepsi®, 7UP®, Mirinda® czy&nbsp;MTN Dew® to smaki, które zna każdy. Zaserwuj je bliskim na
+						rodzinnej&nbsp;imprezie lub
+						podczas domówki z przyjaciółmi i spraw, że każdy znajdzie w szklance swój ulubiony napój.
+					</p>
+				</div>
+
+				<div class="es-cross__single es-cross__single--2">
+					<img src="./img/cross-2.png"
+							 alt="klasyki, które zachwycają smakiem"
+							 class="es-cross__img">
+					<p class="es-cross__single-title es-cross__single-title--blue">klasyki, które zachwycają smakiem</p>
+					<p class="es-cross__single-description es-cross__single-description--blue">
+						Cola, Tonic czy Cytryna Limonka to ponadczasowe smaki, które nigdy się nie nudzą. W wersji solo są
+						idealne gdy
+						potrzebujesz chwili relaksu, a gdy dodasz do nich ulubione owoce, zioła lub przyprawy stają się gwiazdą
+						każdej&nbsp;imprezy.
+					</p>
+				</div>
+
+				<div class="es-cross__single es-cross__single--3">
+					<img src="./img/cross-3.png"
+							 alt="owocowa słodycz bez dodatku cukru"
+							 class="es-cross__img">
+					<p class="es-cross__single-title">owocowe akcenty, które nastrajają pozytywnie</p>
+					<p class="es-cross__single-description">
+						Owocowe lemoniady, przygotowane na&nbsp;bazie syropów Sodastream o smaku Marakui, Pomarańczy Mango lub
+						Różowego Grejpfruta,
+						to idealne orzeźwienie w ciągu dnia. Podawaj je solo lub z kostkami lodu i owocami i ciesz się słodkim
+						smakiem, choć bez
+						dodatku cukru!
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="es-footer">
+			<img src="./img/bottles.png"
+					 alt="zbierz wszystkie 10 kolorów!"
+					 class="es-footer__bottles">
+			<div class="es-footer__inner">
+				<p class="es-section-title es-footer__hashtag">
+					zbierz wszystkie<br> 10 kolorów!
+				</p>
+				<p class="es-section-title es-footer__subtitle">
+					Intensywne, nasycone, zachwycające! Takie właśnie są nowe kolory butelek Sodastream fizz & go. Wybierz
+					odcień, który
+					najlepiej oddaje Twoją energię, lub kilka z nich i zmieniaj je w zależności od nastroju
+					i&nbsp;planu&nbsp;dnia.
+				</p>
+			</div>
+		</div>
+		<div class="es-footer__logo-wrapper">
+			<p class="es-section-title es-footer__hashtag es-footer__hashtag--last">
+				#drinkbetter
+			</p>
+		</div>
+	</div>
+</div>

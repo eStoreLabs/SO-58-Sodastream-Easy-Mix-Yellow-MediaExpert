@@ -470,6 +470,7 @@
 			}
 			#es-rc #es-rc-content .es-comfort__left-description {
 				font-size: 16px;
+				text-align: left;
 			}
 			#es-rc #es-rc-content .es-style__img {
 				max-width: 60%;
@@ -801,16 +802,16 @@
 				}
 				#es-rc #es-rc-content .es-design__single-subtitle--2 {
 					top: 26%;
-					right: 3%;
+					right: 5%;
 					text-align: left;
 				}
 				#es-rc #es-rc-content .es-design__single-subtitle--3 {
 					top: 46%;
-					left: 9%;
+					left: 11%;
 				}
 				#es-rc #es-rc-content .es-design__single-subtitle--4 {
 					top: 64%;
-					right: -1%;
+        	right: 1%;
 					text-align: left;
 				}
 				#es-rc #es-rc-content .es-design__single-subtitle--5 {
@@ -819,7 +820,7 @@
 				}
 				#es-rc #es-rc-content .es-design__description-img {
 					order: 2;
-					width: 470px;
+        	width: 450px;
 				}
 				#es-rc #es-rc-content .es-design__single {
 					flex-direction: row;
@@ -849,6 +850,7 @@
 					left: 5%;
 					transform: translate(-5%, 0%);
 					width: 38%;
+					z-index: 1;
 				}
 				#es-rc #es-rc-content .es-design__new-title {
 					text-align: left;
@@ -911,8 +913,12 @@
 					position: relative;
 				}
 				#es-rc #es-rc-content .es-cross__container {
+					display: -webkit-box;
 					display: flex;
+					-webkit-box-orient: horizontal;
+					-webkit-box-direction: normal;
 					flex-direction: row;
+					-webkit-box-pack: center;
 					justify-content: center;
 					align-items: unset;
 					gap: 0;
@@ -924,7 +930,12 @@
 					min-height: 175px;
 				}
 				#es-rc #es-rc-content .es-cross__single {
-					max-width: 33.3%;
+					width: 33.33%;
+					padding: 32px 10px;
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-start;
+					align-items: center;
 					padding-top: 40px;
 					padding-bottom: 35px;
 					row-gap: 5px;
@@ -934,9 +945,10 @@
 				}
 				#es-rc #es-rc-content .es-steps__steps__item {
 					max-width: 200px;
+					min-width: 200px;
 				}
 				#es-rc #es-rc-content .es-footer {
-					background-image: url("../img/bottles-d.png");
+					background-image: url("./img/bottles-d.png");
 					background-size: cover;
 					background-repeat: no-repeat;
 					background-color: #faf8f8;
@@ -981,6 +993,64 @@
 				}
 			}
 			@media screen and (min-width: 998px) {
+				#es-rc #es-rc-content .es-kv__packshot {
+        	right: -11.5%;
+    		}
+				#es-rc #es-rc-content .es-cross__single-description {
+					min-height: 165px;
+				}
+				#es-rc #es-rc-content .es-cross__single-title {
+					min-height: 35px;
+				}
+				#es-rc #es-rc-content .es-kv__description-title,
+				#es-rc #es-rc-content .es-design__title,
+				#es-rc #es-rc-content .es-steps__title,
+				#es-rc #es-rc-content .es-eco__bottom-title,
+				#es-rc #es-rc-content .es-footer__hashtag {
+					font-size: 28px;
+				}
+				#es-rc #es-rc-content .es-eco__subtitle {
+					margin-bottom: 30px;
+				}
+				
+				#es-rc #es-rc-content .es-footer {
+					min-height: 500px;
+					background-position: top;
+					margin-top: 50px;
+					padding-bottom: 0;
+				}
+				#es-rc #es-rc-content .es-footer__inner {
+					max-width: 100%;
+					margin-top: 305px;
+					max-width: 100%;
+				}
+				#es-rc #es-rc-content .es-footer__hashtag {
+					padding-top: 0;
+					font-size: 32px;
+				}
+				#es-rc #es-rc-content .es-footer__subtitle {
+					max-width: 81%;
+					margin: 0 auto;
+				}
+			}
+			@media screen and (min-width: 1200px) {
+				#es-rc #es-rc-content .es-kv__packshot {
+					right: -31.5%;
+    		}
+				#es-rc #es-rc-content .es-style__wrapper {
+					top: 10%;
+					right: -52.9%;
+    		}
+			}
+			@media screen and (min-width: 1300px) {
+				#es-rc #es-rc-content .es-kv__packshot {
+					right: -20.5%;
+    		}
+			}
+			@media screen and (min-width: 1400px) {
+				#es-rc #es-rc-content #es-rc #es-rc-content .es-pre-kv__title {
+					font-size: 35px;
+				}
 				#es-rc #es-rc-content .es-kv {
 					position: relative;
 					padding-bottom: 100px;
@@ -1020,11 +1090,38 @@
 					margin-top: 10px;
 					max-width: 400px;
 				}
-				#es-rc #es-rc-content .es-cross__single-description {
-					min-height: 165px;
+				#es-rc #es-rc-content .es-style__inner {
+					max-width: 67%;
 				}
-				#es-rc #es-rc-content .es-cross__single-title {
-					min-height: 35px;
+				#es-rc #es-rc-content .es-style__left {
+					max-width: revert;
+				}
+				#es-rc #es-rc-content .es-style__img {
+					z-index: 3;
+					position: relative;
+					min-width: 100%;
+					max-width: 100%;
+				}
+				#es-rc #es-rc-content .es-style__img-title {
+					font-size: 35px;
+				}
+				#es-rc #es-rc-content .es-style__title-img {
+					max-width: 70%;
+				}
+				#es-rc #es-rc-content .es-style__img-description span {
+					font-size: 30px;
+				}
+				#es-rc #es-rc-content .es-style__wrapper {
+					right: -42.3%;
+				}
+				#es-rc #es-rc-content .es-style__img-title-group {
+					margin-right: revert;
+				}
+				#es-rc #es-rc-content .es-style__img-description {
+					margin-bottom: 165px;
+					margin-left: 0px;
+					font-size: 20px;
+					max-width: 405px;
 				}
 				#es-rc #es-rc-content .es-design__description-img {
 					width: 595px;
@@ -1059,15 +1156,25 @@
 					top: 76.9%;
 					left: 1.2%;
 				}
-				#es-rc #es-rc-content .es-kv__description-title,
-				#es-rc #es-rc-content .es-design__title,
-				#es-rc #es-rc-content .es-steps__title,
-				#es-rc #es-rc-content .es-eco__bottom-title,
-				#es-rc #es-rc-content .es-footer__hashtag {
-					font-size: 28px;
+				#es-rc #es-rc-content .es-design__new-wrapper {
+					top: 35.4%;
+					left: 6%;
+					width: 34%;
 				}
-				#es-rc #es-rc-content .es-eco__subtitle {
-					margin-bottom: 30px;
+				#es-rc #es-rc-content .es-design__new-title {
+					margin-bottom: 55px;
+					font-size: 38px;
+				}
+				#es-rc #es-rc-content .es-design__new-description {
+					max-width: 355px;
+					font-size: 20px;
+				}
+				#es-rc #es-rc-content .es-steps__steps__item__text {
+					font-size: 18px;
+				}
+				#es-rc #es-rc-content .es-steps__steps__wrapper {
+					-moz-column-gap: 0;
+							column-gap: 0;
 				}
 				#es-rc #es-rc-content .es-steps__steps__item {
 					max-width: 285px;
@@ -1108,82 +1215,10 @@
 				#es-rc #es-rc-content .es-comfort__right {
 					width: 54%;
 				}
-				#es-rc #es-rc-content .es-footer {
-					min-height: 500px;
-					background-position: top;
-					margin-top: 50px;
-					padding-bottom: 0;
-				}
-				#es-rc #es-rc-content .es-footer__inner {
-					max-width: 100%;
-					margin-top: 305px;
-					max-width: 100%;
-				}
-				#es-rc #es-rc-content .es-footer__hashtag {
-					padding-top: 0;
-					font-size: 32px;
-				}
-				#es-rc #es-rc-content .es-footer__subtitle {
-					max-width: 81%;
-					margin: 0 auto;
-				}
-				#es-rc #es-rc-content .es-style__inner {
-					max-width: 67%;
-				}
-				#es-rc #es-rc-content .es-style__left {
-					max-width: revert;
-				}
-				#es-rc #es-rc-content .es-style__img {
-					z-index: 3;
-					position: relative;
-					min-width: 100%;
-					max-width: 100%;
-				}
-				#es-rc #es-rc-content .es-style__img-title {
-					font-size: 35px;
-				}
-				#es-rc #es-rc-content .es-style__title-img {
-					max-width: 70%;
-				}
-				#es-rc #es-rc-content .es-style__img-description span {
-					font-size: 30px;
-				}
+			}
+			@media screen and (min-width: 1500px) {
 				#es-rc #es-rc-content .es-style__wrapper {
 					right: -39.3%;
-				}
-				#es-rc #es-rc-content .es-style__img-title-group {
-					margin-right: revert;
-				}
-				#es-rc #es-rc-content .es-style__img-description {
-					margin-bottom: 165px;
-					margin-left: 0px;
-					font-size: 20px;
-					max-width: 405px;
-				}
-				#es-rc #es-rc-content .es-design__new-wrapper {
-					top: 35.4%;
-					left: 6%;
-					width: 34%;
-				}
-				#es-rc #es-rc-content .es-design__new-title {
-					margin-bottom: 55px;
-					font-size: 38px;
-				}
-				#es-rc #es-rc-content .es-design__new-description {
-					max-width: 355px;
-					font-size: 20px;
-				}
-				#es-rc #es-rc-content .es-steps__steps__item__text {
-					font-size: 18px;
-				}
-				#es-rc #es-rc-content .es-steps__steps__wrapper {
-					-moz-column-gap: 0;
-							column-gap: 0;
-				}
-			}
-			@media screen and (min-width: 1400px) {
-				#es-rc #es-rc-content #es-rc #es-rc-content .es-pre-kv__title {
-					font-size: 35px;
 				}
 			}
 </style>
@@ -1213,7 +1248,7 @@
 							 alt="logo Sodastream">
 					<div class="es-kv__title">
 						<p class="es-kv__title--headline">
-							<span>fizz & go<sup class="es-tm-headline">™</sup></span>
+							<span>fizz&nbsp;&&nbsp;go<sup class="es-tm-headline">™</sup></span>
 							easy mix
 						</p>
 						<p class="es-kv__title--bottomline">butelka termiczna<br>
@@ -1249,7 +1284,8 @@
 					<p class="es-kv__description-title">złap ulubione bąbelki do termicznej butelki
 						i&nbsp;zabierz&nbsp;je&nbsp;ze&nbsp;sobą!</p>
 					<p class="es-kv__description__text">
-						Sięgnij po Sodastream fizz & go™ – rewolucyjną butelkę do gazowania wody, w której bąbelki pozostaną
+						Sięgnij po Sodastream fizz&nbsp;&&nbsp;go™ – rewolucyjną butelkę do gazowania wody, w której bąbelki
+						pozostaną
 						idealnie chłodne
 						nawet do 12 godzin. To wielofunkcyjne rozwiązanie 3 w 1, które łączy w sobie funkcjonalność butelki do
 						saturatora,
@@ -1287,7 +1323,8 @@
 		<div class="es-design">
 			<p class="es-design__title">funkcjonalny design, który współgra razem z Tobą
 			</p>
-			<p class="es-design__subtitle">Poznaj butelkę do zadań specjalnych! Sodastream fizz & go jest odporna na
+			<p class="es-design__subtitle">Poznaj butelkę do zadań specjalnych! Sodastream fizz&nbsp;&&nbsp;go jest
+				odporna na
 				uszkodzenia i korozję, a przy tym niezwykle
 				szczelna — nie musisz się więc obawiać, że Twój napój straci bąbelki. Dodatkowo można ją bezpiecznie myć w
 				zmywarce, co
@@ -1379,7 +1416,8 @@
 						realną różnicę.
 						Zamiast sięgać po jednorazowe butelki i kubki, wybierz rozwiązanie, które zostaje z Tobą na dłużej.
 						<br><br>
-						Z Sodastream fizz & go zadbasz o codzienne nawodnienie, jednocześnie wspierając dobro naszej planety. To
+						Z Sodastream fizz&nbsp;&&nbsp;go zadbasz o codzienne nawodnienie, jednocześnie wspierając dobro naszej
+						planety. To
 						mały krok,
 						który prowadzi do wielkiej zmiany i bardziej świadomego stylu życia.
 					</p>
@@ -1404,7 +1442,8 @@
 											 src="./img/gaz.png"
 											 alt="gazuj">
 									<p class="es-steps__steps__item__text">
-										Wlej wodę z kranu do butelki do Sodastream fizz & go™, a następnie zamontuj ją w saturatorze.
+										Wlej wodę z kranu do butelki do Sodastream fizz&nbsp;&&nbsp;go™, a następnie zamontuj ją
+										w saturatorze.
 									</p>
 								</div>
 								<div class="es-steps__steps__item">
@@ -1434,30 +1473,32 @@
 
 		<div class="es-easy-mix">
 			<p class="es-easy-mix__title">
-				Sodastream fizz & go<sup class="es-tm">™</sup> – dowiedz się więcej o butelce do zadań&nbsp;specjalnych
+				Sodastream fizz&nbsp;&&nbsp;go<sup class="es-tm">™</sup> – dowiedz się więcej o butelce do
+				zadań&nbsp;specjalnych
 			</p>
 			<div class="es-easy-mix__container">
 				<div class="es-easy-mix__left">
 					<img src="./img/easy-mix.png"
-							 alt="Termiczna butelka Sodastream Fizz & Go™ Easy Mix"
+							 alt="Termiczna butelka Sodastream fizz&nbsp;&&nbsp;go™ Easy Mix"
 							 class="es-easy-mix__img">
 				</div>
 				<div class="es-easy-mix__right">
 					<p class="es-easy-mix__description">
-						<b>Z jakimi saturatorami można używać butelki Sodastream&nbsp;fizz & go™?</b><br>
+						<b>Z jakimi saturatorami można używać butelki Sodastream&nbsp;fizz&nbsp;&&nbsp;go™?</b><br>
 						Saturatory Terra, Art, Mix, Duo i Ensō to modele, które są&nbsp;w&nbsp;pełni kompatybilne z wielorazową
 						butelką
 						Sodastream&nbsp;fizz &
 						go.
 
 						<br><br>
-						<b>Czy butelkę Sodastream fizz & go™ można myć w zmywarce?</b><br>
+						<b>Czy butelkę Sodastream fizz&nbsp;&&nbsp;go™ można myć w zmywarce?</b><br>
 						Tak! Możesz bezpiecznie włożyć ją do zmywarki, by już&nbsp;po&nbsp;chwili cieszyć się idealną
 						czystością.
 
 						<br><br>
-						<b>Czy do butelki Sodastream fizz & go™ można wlać ciepły&nbsp;napój?</b><br>
-						Sodastream fizz&go to praktyczny bidon termiczny, w&nbsp;którym&nbsp;możesz przechowywać zarówno zimne
+						<b>Czy do butelki Sodastream fizz&nbsp;&&nbsp;go™ można wlać ciepły&nbsp;napój?</b><br>
+						Sodastream fizz&nbsp;&&nbsp;go to praktyczny bidon termiczny, w&nbsp;którym&nbsp;możesz przechowywać
+						zarówno zimne
 						jak
 						i&nbsp;ciepłe&nbsp;napoje, takie
 						jak kawa czy herbata*.
@@ -1471,7 +1512,8 @@
 		</div>
 
 		<div class="es-comfort">
-			<p class="es-comfort__left-title">Sodastream fizz & go<sup class="es-tm">™</sup> – pozytywny akcent każdego
+			<p class="es-comfort__left-title">Sodastream fizz&nbsp;&&nbsp;go<sup class="es-tm">™</sup> – pozytywny akcent
+				każdego
 				dnia</p>
 			<div class="es-comfort__container">
 				<div class="es-comfort__left">
@@ -1479,7 +1521,7 @@
 					<p class="es-comfort__left-description">
 						<b>Aktywnie każdego dnia</b><br>Wybierasz się na wypad w góry, jogę, szybki spacer po&nbsp;pracy?
 						Sodastream
-						fizz & go™ sprawdzi się jako bidon&nbsp;lub&nbsp;termos,
+						fizz&nbsp;&&nbsp;go™ sprawdzi się jako bidon&nbsp;lub&nbsp;termos,
 						który utrzymuje chłód napojów nawet&nbsp;do&nbsp;12&nbsp;godzin.&nbsp;To niezbędny kompan każdej
 						aktywności!
 						<br><br>
@@ -1489,7 +1531,7 @@
 						<br><br>
 						<b>Prezent, który zachwyca</b><br>Szukasz praktycznego upominku z charakterem?
 						Żółta&nbsp;butelka&nbsp;Sodastream
-						fizz & go ucieszy każdą obdarowaną osobę – łączy
+						fizz&nbsp;&&nbsp;go ucieszy każdą obdarowaną osobę – łączy
 						wysoką funkcjonalność z designem, który przyciąga spojrzenia.
 						<br><br>
 						<b>W drodze po dobre chwile</b><br> Jesteś w drodze do pracy, wyruszasz na weekendową wycieczkę lub
@@ -1567,7 +1609,8 @@
 					zbierz wszystkie<br> 10 kolorów!
 				</p>
 				<p class="es-section-title es-footer__subtitle">
-					Intensywne, nasycone, zachwycające! Takie właśnie są nowe kolory butelek Sodastream fizz & go. Wybierz
+					Intensywne, nasycone, zachwycające! Takie właśnie są nowe kolory butelek Sodastream fizz&nbsp;&&nbsp;go.
+					Wybierz
 					odcień, który
 					najlepiej oddaje Twoją energię, lub kilka z nich i zmieniaj je w zależności od nastroju
 					i&nbsp;planu&nbsp;dnia.
